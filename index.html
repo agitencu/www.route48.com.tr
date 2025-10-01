@@ -83,23 +83,41 @@
     </section><!-- /Hero Section -->
     
     <!-- Popup HTML -->
-    <div id="popup" class="popup">
-      <div class="popup-content">
-        <button class="close" onclick="closePopup()">✖</button>
-        <h1>Route 48 Eylül Kampanyaları</h1>
-        <p ><strong>33 cl Tuborg Fıçı </strong> <span style="color: red;">Gün boyu! </span> <span class="highlight"> 75 TL</span></p>
-        <p ><strong>33 cl Carlsberg Fıçı </strong> <span style="color: red;">Gün boyu! </span> <span class="highlight"> 85 TL</span></p>
-        <p ><strong>50 cl Tuborg Fıçı </strong> <span style="color: red;">Gün boyu! </span> <span class="highlight"> 140 TL</span></p>
-        <p ><strong>50 cl Carlsberg Fıçı </strong> <span style="color: red;">Gün boyu! </span> <span class="highlight"> 150 TL</span></p>
-        <p ><strong>33 cl Fıçı + Shot </strong> <span style="color: red;">1 Ekime kadar! </span> <span class="highlight"> 150 TL</span></p>
-        <p><strong>50 cl Tuborg Fıçı + Shot </strong> <span class="highlight"> 220 TL</span> </p>
-        <p><strong>50 cl Carlsberg Fıçı + Shot </strong><span class="highlight"> 230 TL</span></p>
-        <p><strong>5'li Shot(Tekila, Viski, Jager) </strong><span class="highlight"> 550 TL</span></p>
-        <p ><strong>5X5 Kampanya(5 adet 33 cl Fıçı + 5 adet Pink Shot)</strong> <span class="highlight"> 600 TL</span></p>
+  <div id="popup" class="popup">
+    <div class="popup-content">
+      <button class="close" onclick="closePopup()">✖</button>
 
-        <p>Diğer tüm kampanya ve ürünleri menümüzden inceleyebilirsiniz!</p>
+      <!-- Slider alanı -->
+      <div class="slider">
+        <div class="slide active">
+          <h1 style="color: #e63946;">Route 48 EKİM Kampanyaları</h1>
+          <p ><strong>33 cl Tuborg Fıçı </strong> <span style="color: red;">Gün boyu! </span> <span class="highlight"> 75 TL</span></p>
+          <p ><strong>33 cl Carlsberg Fıçı </strong> <span style="color: red;">Gün boyu! </span> <span class="highlight"> 85 TL</span></p>
+          <p ><strong>50 cl Tuborg Fıçı </strong> <span style="color: red;">Gün boyu! </span> <span class="highlight"> 140 TL</span></p>
+          <p ><strong>50 cl Carlsberg Fıçı </strong> <span style="color: red;">Gün boyu! </span> <span class="highlight"> 150 TL</span></p>
+          <p ><strong>33 cl Fıçı + Shot </strong> <span style="color: red;"> 10 Ekim'e kadar! </span> <span class="highlight"> 150 TL</span></p>
+          <p><strong>50 cl Tuborg Fıçı + Shot </strong> <span class="highlight"> 220 TL</span> </p>
+          <p><strong>50 cl Carlsberg Fıçı + Shot </strong><span class="highlight"> 230 TL</span></p>
+          <p><strong>5'li Shot(Tekila, Viski, Jager) </strong><span class="highlight"> 550 TL</span></p>
+          <p ><strong>5X5 Kampanya(5 adet 33 cl Fıçı + 5 adet Pink Shot)</strong> <span class="highlight"> 600 TL</span></p>
+
+          <p>Diğer tüm kampanya ve ürünleri menümüzden inceleyebilirsiniz!</p>
+        </div>
+
+        <div class="slide">
+          <h1 style="color: #e63946;">Route 48 OctoberFest</h1>
+
+          <img src="./assets/img/octoberfest.jpg" alt="Kampanya 2" class="slide-img">
+        </div>
       </div>
+
+    <!-- Slider Kontroller -->
+    <div class="controls">
+      <button onclick="prevSlide()">⬅</button>
+      <button onclick="nextSlide()">➡</button>
     </div>
+  </div>
+  </div>
 
   </main>
 
