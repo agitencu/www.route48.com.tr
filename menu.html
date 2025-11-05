@@ -1627,71 +1627,581 @@
           </div>
           <!-- End nuts Menu Content -->
 
-
           <div class="tab-pane fade" id="menu-foods">
 
             <div class="tab-header text-center">
               <p>Menü</p>
               <h3>
-                Atıştırmalıklar</h3>
+                Yiyecekler</h3>
             </div>
 
             <div class="row gy-5">
               
-              <div class="col-lg-4 menu-item">
-                <h4>Onion Rings Tabağı</h4>
-                <p class="ingredients">
-                  6 adet soğan halkası, patates kızartması
-                </p>
-                <p class="price">
-                  200 ₺
-                </p>
-              </div>
+              <!-- Categories -->
+              <ul class="nav nav-tabs d-flex justify-content-center" data-aos="fade-up" data-aos-delay="100">
 
-              <div class="col-lg-4 menu-item">
-                <h4>Patates Kızartması Tabağı</h4>
-                <p class="ingredients">
-                  120 gr. patates kızartması
-                </p>
-                <p class="price">
-                  175 ₺
-                </p>
-              </div>
+                <li class="nav-item">
+                  <a class="nav-link active show" data-bs-toggle="tab" data-bs-target="#menu-toast">
+                    <h4>Tostlar</h4>
+                  </a>
+                </li>
 
-              <div class="col-lg-4 menu-item">
-                <h4>Sosis Kova Tabağı</h4>
-                <p class="ingredients">
-                  6 adet sosis, patates kızartması
-                </p>
-                <p class="price">
-                  160 ₺
-                </p>
-              </div>
+                <li class="nav-item">
+                  <a class="nav-link" data-bs-toggle="tab" data-bs-target="#menu-kumru">
+                    <h4>Kumru</h4>
+                  </a>
 
-              <div class="col-lg-4 menu-item">
-                <h4>Tavuk Tenders Tabağı</h4>
-                <p class="ingredients">
-                  5 adet tenders parçası, patates kızartması
-                </p>
-                <p class="price">
-                  250 ₺
-                </p>
-              </div>
+                </li>
 
-              <div class="col-lg-4 menu-item">
-                <h4>Route 48 Mix Tabağı</h4>
-                <p class="ingredients">
-                  Patates kızartması, 2 tenders parçası, 4 adet soğan halkası, 4 adet sosis
-                </p>
-                <p class="price">
-                  300 ₺
-                </p>
-              </div>
+                <li class="nav-item">
+                  <a class="nav-link" data-bs-toggle="tab" data-bs-target="#menu-patso">
+                    <h4>Patso</h4>
+                  </a>
+                </li>
 
+                <li class="nav-item">
+                  <a class="nav-link" data-bs-toggle="tab" data-bs-target="#menu-pasta">
+                    <h4>Makarnalar</h4>
+                  </a>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link" data-bs-toggle="tab" data-bs-target="#menu-hamburger">
+                    <h4>Burgerler</h4>
+                  </a>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link" data-bs-toggle="tab" data-bs-target="#menu-pizza">
+                    <h4>Pizzalar</h4>
+                  </a>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link" data-bs-toggle="tab" data-bs-target="#menu-salad">
+                    <h4>Salatalar</h4>
+                  </a>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link" data-bs-toggle="tab" data-bs-target="#menu-breakfast">
+                    <h4>Kahvaltı</h4>
+                  </a>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link" data-bs-toggle="tab" data-bs-target="#menu-snacks">
+                    <h4>Aperatifler</h4>
+                  </a>
+                </li>
+            
+              </ul>
+              <!-- End Categories -->
+
+              <div class="tab-content" data-aos="fade-up" data-aos-delay="200">
+                <div class="tab-pane fade active show" id="menu-toast">
+
+                  <div class="tab-header text-center">
+                    <p>Menü</p>
+                    <h3>Tostlar</h3>
+                  </div>
+
+                  <div class="row gy-5">
+
+                    <div class="col-lg-4 menu-item">
+                      <h4>Pit Karışık Tost</h4>
+                      <p>Dana sucuk,kaşar,ketçap,mayonez,özel sos, ve domates turşu patates kızartması ile servis edilir.</p>
+                      <p class="price">
+                        140 ₺
+                      </p>
+                    </div>
+
+                    <div class="col-lg-4 menu-item">
+                      <h4>Pit Çift Kaşarlı Tost</h4>
+                      <p>Kaşar peyniri,özel sos,ketçap,moyonez ve domates,turşu, patates kızartması ile servis edilir</p>
+                      <p class="price">
+                        120 ₺
+                      </p>
+                    </div>
+
+                    <div class="col-lg-4 menu-item">
+                      <h4>Pit Mix Tost</h4>
+                      <p>Dana Sucuk,salam,sosis,kaşar,özel sos,ketçap,mayonez ve domates,turşu,patates kızartması ile servis edilir</p>
+                      <p class="price">
+                        160 ₺
+                      </p>
+                    </div>
+
+                    <div class="col-lg-4 menu-item">
+                      <h4>Pit Beyaz Peynirli Tost</h4>
+                      <p>Beyaz peynir,pesto sos,domates ve turşu,patates kızartmasıyla servis edilir</p>
+                      <p class="price">
+                        120 ₺
+                      </p>
+                    </div>
+
+                    <div class="col-lg-4 menu-item">
+                      <h4>Pit Kavurmalı Tost</h4>
+                      <p>Dana kavurma,çift kaşar peyniri,özel sos ve domates,turşu,patates kızartması ile servis edilir</p>
+                      <p class="price">
+                        240 ₺
+                      </p>
+                    </div>
+
+                  </div>
+                </div>
+                <!-- End Toast Menu Content -->
+
+                <div class="tab-pane fade" id="menu-kumru">
+
+                  <div class="tab-header text-center">
+                    <p>Menü</p>
+                    <h3>Kumru</h3>
+                  </div>
+
+                  <div class="row gy-5">
+
+                    <div class="col-lg-4 menu-item">
+                      <h4>Pit Kumru</h4>
+                      <p>
+                        Özel kumru ekmeği,sosis,salam,sucuk,kaşar peyniri,özel sos,ketçap,mayonez ve turşu ve patates kızartması ile servis edilir
+                      </p>
+                      <p class="price">
+                        150 ₺
+                      </p>
+                    </div>
+
+                    <div class="col-lg-4 menu-item">
+                      <h4>Pit Mexican Kumru</h4>
+                      <p>
+                        Özel kumru ekmeği,sosis,salam,sucuk,kaşar peyniri,özel acı sos,ketçap,mayonez ve turşu ,patates kızartması ile servis edilir.
+                      </p>
+                      <p class="price">
+                        150 ₺
+                      </p>
+                    </div>
+
+                  </div>
+                </div>
+                <!-- End Kumru Menu Content -->
+
+
+                  <div class="tab-pane fade" id="menu-patso">
+
+                  <div class="tab-header text-center">
+                    <p>Menü</p>
+                    <h3>Patso</h3>
+                  </div>
+
+                  <div class="row gy-5">
+
+                    <div class="col-lg-4 menu-item">
+                      <h4>Pit Klasik Patso</h4>
+                      <p>Patates kızartması,ketçap,mayonez ve turşu ile servis edilir.</p>
+                      <p class="price">
+                        110 ₺
+                      </p>
+                    </div>
+
+                    <div class="col-lg-4 menu-item">
+                      <h4>Pit Sosisli Patso</h4>
+                      <p>Patates kızartması,sosis,ketçap ,mayonez ve turşu ile servis edilir.</p>
+                      <p class="price">
+                        125 ₺
+                      </p>
+                    </div>
+
+                    <div class="col-lg-4 menu-item">
+                      <h4>Pit Mix Patso</h4>
+                      <p>Patates kızartması ,sosis,sucuk,ketçep,mayonez ve turşu ile servis edilir.</p>
+                      <p class="price">
+                        140 ₺
+                      </p>
+                    </div>
+
+                  </div>
+                </div>
+                <!-- End Patso Menu Content -->
+
+                <div class="tab-pane fade" id="menu-pasta">
+
+                  <div class="tab-header text-center">
+                    <p>Menü</p>
+                    <h3>Makarnalar</h3>
+                  </div>
+
+                  <div class="row gy-5">
+
+                    <div class="col-lg-4 menu-item">
+                      <span style="color: red;">Penne</span>
+                      <h4>Penne Alfredo</h4>
+                      <p>Penne makarna,krema,parmesan,tereyağ ve özel baharatlar.</p>
+                      <p class="price">
+                        135 ₺
+                      </p>
+                    </div>
+
+                    <div class="col-lg-4 menu-item">
+                      <span style="color: red;">Penne</span>
+                      <h4>Tavuklu Mantarlı Penne</h4>
+                      <p>Penne makarna,tavuk,mantar,krema ve özel baharatlar.</p>
+                      <p class="price">
+                        165 ₺
+                      </p>
+                    </div>
+
+                    <div class="col-lg-4 menu-item">
+                      <span style="color: red;">Penne</span>
+                      <h4>Pesto soslu penne</h4>
+                      <p>Penne makarna,pesto sos,parmesan,fesleğen,zeytin yağı.</p>
+                      <p class="price">
+                        145 ₺
+                      </p>
+                    </div>
+
+                    <div class="col-lg-4 menu-item">
+                      <span style="color: red;">Penne</span>
+                      <h4>Köri soslu penne</h4>
+                      <p>Penne makarna,tavuk,köri,krema ,tereyağ</p>
+                      <p class="price">
+                        135 ₺
+                      </p>
+                    </div>
+
+                    <div class="col-lg-4 menu-item">
+                      <span style="color: red;">Penne</span>
+                      <h4>Penne Napoliten</h4>
+                      <p>Penne makarna,özel domates sosu,sarımsak ve fesleğen</p>
+                      <p class="price">
+                        135 ₺
+                      </p>
+                    </div>
+
+                    <div class="col-lg-4 menu-item">
+                      <span style="color: red;">Penne</span>
+                      <h4>Penne Bolonez</h4>
+                      <p>Penne makarna,özel domates sos,kıyma,fesleğen ve sarımsak</p>
+                      <p class="price">
+                        165 ₺
+                      </p>
+                    </div>
+
+                    <div class="col-lg-4 menu-item">
+                      <span style="color: red;">Fettuccine</span>
+                      <h4>Fettuccine Alfredo</h4>
+                      <p>Fettuccine makarna,krema,parmesan,tereyağ ve özel baharatlar</p>
+                      <p class="price">
+                        185 ₺
+                      </p>
+                    </div>
+
+                    <div class="col-lg-4 menu-item">
+                      <span style="color: red;">Fettuccine</span>
+                      <h4>Tavuklu Mantarlı Fettuccine</h4>
+                      <p>Fettuccine makarna,tavuk,mantar,krema ve özel baharatlar</p>
+                      <p class="price">
+                        215 ₺
+                      </p>
+                    </div>
+
+                    <div class="col-lg-4 menu-item">
+                      <span style="color: red;">Fettuccine</span>
+                      <h4>Pesto soslu Fettuccine</h4>
+                      <p>Fettuccine makarna,pesto sos,parmesan,fesleğen,zeytin yağı</p>
+                      <p class="price">
+                        195 ₺
+                      </p>
+                    </div>
+
+                    <div class="col-lg-4 menu-item">
+                      <span style="color: red;">Fettuccine</span>
+                      <h4>Köri soslu Fettuccine</h4>
+                      <p>Fettuccine makarna,tavuk,köri,krema ,tereyağ</p>
+                      <p class="price">
+                        185 ₺
+                      </p>
+                    </div>
+
+                    <div class="col-lg-4 menu-item">
+                      <span style="color: red;">Fettuccine</span>
+                      <h4>Fettuccine Napoliten</h4>
+                      <p>Fettuccine makarna,özel domates sosu,sarımsak ve fesleğen</p>
+                      <p class="price">
+                        185 ₺
+                      </p>
+                    </div>
+
+                    <div class="col-lg-4 menu-item">
+                      <span style="color: red;">Fettuccine</span>
+                      <h4>Fettuccine Bolonez</h4>
+                      <p>Fettuccine makarna,özel domates sos,kıyma,fesleğen ve sarımsak</p>
+                      <p class="price">
+                        215 ₺
+                      </p>
+                    </div>
+
+                  </div>
+                </div>
+                <!-- End Pasta Menu Content -->
+
+                <div class="tab-pane fade" id="menu-hamburger">
+
+                  <div class="tab-header text-center">
+                    <p>Menü</p>
+                    <h3>Burgerler</h3>
+                  </div>
+
+                  <div class="row gy-5">
+
+                    <div class="col-lg-4 menu-item">
+                      <h4>Pit Burger</h4>
+                      <p>
+                        130 gr Ev yapımı dana köfte,marul,domates, turşu,soğan,ketçap,mayonez,cheddar,özel sos ve patates kızartması ile servis edilir.
+                      </p>
+                      <p class="price">
+                        240 ₺
+                      </p>
+                    </div>
+
+                    <div class="col-lg-4 menu-item">
+                      <h4>Pit Cheeseburger</h4>
+                      <p>
+                        130 gr Ev yapımı dana köfte,double cheddar marul,domates,turşu,soğan,ketçap,mayonez ,özel sos ve patates kızartması ile servis edilir.
+                      </p>
+                      <p class="price">
+                        250 ₺
+                      </p>
+                    </div>
+
+                    <div class="col-lg-4 menu-item">
+                      <h4>Pit Gurme Burger</h4>
+                      <p>
+                        130 gr Ev yapımı dana köfte, marul,domates,turşu,karamelize soğan ,ketçap,mayonez ,özel sos ve patates kızartması ile servis edilir.
+                      </p>
+                      <p class="price">
+                        250 ₺
+                      </p>
+                    </div>
+
+                    <div class="col-lg-4 menu-item">
+                      <h4>Pit Mexican Burger</h4>
+                      <p>
+                        130 gr Ev yapımı dana köfte,marul,domates, turşu,soğan,ketçap,mayonez,cheddar,özel acı sos ve patates kızartması ile servis edilir.
+                      </p>
+                      <p class="price">
+                        250 ₺
+                      </p>
+                    </div>
+
+                    <div class="col-lg-4 menu-item">
+                      <h4>Pit Tavuk Burger</h4>
+                      <p>
+                        130gr Ev yapımı tavuk burger marul,domates,turşu,soğan,ketçap,mayonez ,özel sos ve patates kızartması ile servis edilir.
+                      </p>
+                      <p class="price">
+                        190 ₺
+                      </p>
+                    </div>
+
+                  </div>
+                </div>
+                <!-- End Burger Menu Content -->
+
+                <div class="tab-pane fade" id="menu-pizza">
+
+                  <div class="tab-header text-center">
+                    <p>Menü</p>
+                    <h3>Pizzalar</h3>
+                  </div>
+
+                  <div class="row gy-5">
+
+                    <div class="col-lg-4 menu-item">
+                      <h4>Pit Mix Pizza</h4>
+                      <p>
+                        Ev yapımı pizza hamuru,özel pizza sosu,mozzarella peyniri,sucuk,salam,sosis,biber,mısır,mantar,zeytin.
+                      </p>
+                      <p class="price">
+                        240 ₺
+                      </p>
+                    </div>
+
+                    <div class="col-lg-4 menu-item">
+                      <h4>Pit 3 Peynirli Pizza</h4>
+                      <p>
+                        Ev yapımı pizza hamuru,özel pizza sosu,mozzarella,Cheddar.
+                      </p>
+                      <p class="price">
+                        230 ₺
+                      </p>
+                    </div>
+
+                    <div class="col-lg-4 menu-item">
+                      <h4>Pit Margherita Pizza</h4>
+                      <p>
+                        Ev yapımı pizza hamuru,özel pizza sosu,mozzarella,Cherry domates.
+                      </p>
+                      <p class="price">
+                        200 ₺
+                      </p>
+                    </div>
+
+                  </div>
+                </div>
+                <!-- End Pizza Menu Content -->
+
+                <div class="tab-pane fade" id="menu-salad">
+
+                  <div class="tab-header text-center">
+                    <p>Menü</p>
+                    <h3>Salatalar</h3>
+                  </div>
+
+                  <div class="row gy-5">
+
+                    <div class="col-lg-4 menu-item">
+                      <h4>Izgara Tavuk Salata</h4>
+                      <p>
+                        Izgara tavuk,marul,maydanoz,havuç,domates, salatalık,mor lahana,mısır,özel salata sosu.
+                      </p>
+                      <p class="price">
+                        160 ₺
+                      </p>
+                    </div>
+
+                    <div class="col-lg-4 menu-item">
+                      <h4>Ton Balıklı Salata</h4>
+                      <p>
+                        Tonbalığı,roka,marul,maydanoz,dometes, salatalık,mısır,havuç,özel salata sosu.
+                      </p>
+                      <p class="price">
+                        170 ₺
+                      </p>
+                    </div>
+
+                    <div class="col-lg-4 menu-item">
+                      <h4>Beyaz Peynirli Salata</h4>
+                      <p>
+                        Beyaz peynir,marul,domates,salatalık, maydanoz,Özel salata sosu.
+                      </p>
+                      <p class="price">
+                        150 ₺
+                      </p>
+                    </div>
+
+                  </div>
+                </div>
+                <!-- End Salad Menu Content -->
+
+                <div class="tab-pane fade" id="menu-breakfast">
+
+                  <div class="tab-header text-center">
+                    <p>Menü</p>
+                    <h3>Kahvaltı</h3>
+                  </div>
+
+                  <div class="row gy-5">
+
+                    <div class="col-lg-4 menu-item">
+                      <h4>Pit Kahvaltı Tabağı</h4>
+                      <p>
+                        Beyaz peynir, kaşar peyniri,top peynir,zeytin, salam,sosis,bal ,tereyağı,reçel,omlet,domates,marul salatalık,kıl biber ve 1 bardak çay ile servis edilir.
+                      </p>
+                      <p class="price">
+                        190 ₺
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <!-- End Breakfast Menu Content -->
+
+                <div class="tab-pane fade" id="menu-snacks">
+
+                  <div class="tab-header text-center">
+                    <p>Menü</p>
+                    <h3>Aperatifler</h3>
+                  </div>
+
+                  <div class="row gy-5">
+
+                    <div class="col-lg-4 menu-item">
+                      <h4>Patates Kızartması</h4>
+                      <p>
+                        120 gr patates kızartması ve özel soslar ile servis edilir.
+                      </p>
+                      <p class="price">
+                        120 ₺
+                      </p>
+                    </div>
+
+                    <div class="col-lg-4 menu-item">
+                      <h4>Ringstop</h4>
+                      <p>
+                        6 adet soğan halkası,patates kızartması ve özel soslar ile servis edilir.
+                      </p>
+                      <p class="price">
+                        150 ₺
+                      </p>
+                    </div>
+
+                    <div class="col-lg-4 menu-item">
+                      <h4>Pit Dog & Fries</h4>
+                      <p>
+                        6 adet sosis,patates kızartması ve özel soslar ile servis edilir.
+                      </p>
+                      <p class="price">
+                        140 ₺
+                      </p>
+                    </div>
+
+                    <div class="col-lg-4 menu-item">
+                      <h4>Pit Tenders</h4>
+                      <p>
+                        5 adet Tenders ,patates kızartması ve özel soslar ile servis edilir.
+                      </p>
+                      <p class="price">
+                        160 ₺
+                      </p>
+                    </div>
+
+                    <div class="col-lg-4 menu-item">
+                      <h4>Pit Fuel Trio Sepeti</h4>
+                      <p>
+                        4 sosis ,4 adet soğan halkası,patates kızartması ve özel soslar ile servis edilir
+                      </p>
+                      <p class="price">
+                        200 ₺
+                      </p>
+                    </div>
+
+                    <div class="col-lg-4 menu-item">
+                      <h4>Pit Combo</h4>
+                      <p>
+                       4 tenders ,4 soğan halkası , 4 sosis,Patates kızartması ve özel soslar ile servis edilir.
+                      </p>
+                      <p class="price">
+                        250 ₺
+                      </p>
+                    </div>
+
+                    <div class="col-lg-4 menu-item">
+                      <h4>Midye Tabağı</h4>
+                      <p>
+                       250gr midye tabağı.
+                      </p>
+                      <p class="price">
+                        150 ₺
+                      </p>
+                    </div>
+
+                  </div>
+                </div>
+                <!-- End Salad Menu Content -->
+
+              </div>
             </div>
           </div>
           <!-- End foods Menu Content -->
-
         </div>
         <!-- End Menu -->
 
