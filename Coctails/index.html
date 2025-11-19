@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Route 48 - Kokteyl Seçici</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container d-flex flex-column justify-content-center align-items-center min-vh-100 py-4">
+        
+        <header class="text-center mb-5">
+            <h1 class="display-4 fw-bold text-uppercase route-title">Route 48</h1>
+        </header>
+
+        <div class="scene-container mb-5">
+            <div class="scene" onclick="flipCard()">
+                <div class="card" id="cardElement">
+                    <div class="card__face card__face--front">
+                        <div class="icon-cocktail">🍸</div>
+                        <div class="cta-text">Bugünkü Favori<br>Kokteylini Seç</div>
+                        <div class="cta-sub">Şansını denemek için karta tıkla</div>
+                    </div>
+
+                    <div class="card__face card__face--back" id="cardBack">
+                        <h2 class="cocktail-name" id="cName">Yükleniyor...</h2>
+                        <p class="cocktail-ingredients" id="cIngredients">...</p>
+                        <div class="cocktail-price" id="cPrice">...</div>
+                        <div class="tap-hint">Tekrar seçmek için tıkla</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <a href="https://www.route48.com.tr" class="btn btn-custom-gold mt-3">
+            ← Ana Menüye Dön
+        </a>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Oswald:wght@500&display=swap');
+
+:root {
+    --bg-color: #121212; /* Route 48 Koyu Tema */
+    --gold-accent: #D4AF37;
+    --text-color: #ffffff;
+    --card-size: 320px;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: 'Montserrat', sans-serif;
+    /* Flex ayarlarını kaldırdık çünkü Bootstrap container kullanıyoruz */
+}
+
+/* Başlık Stili */
+.route-title {
+    font-family: 'Oswald', sans-serif;
+    color: var(--text-color);
+    border-bottom: 2px solid var(--gold-accent);
+    display: inline-block;
+    padding-bottom: 10px;
+}
+
+/* Kart Konteyner */
+.scene {
+    width: var(--card-size);
+    height: var(--card-size);
+    perspective: 1000px;
+    cursor: pointer;
+}
+
+/* Mobil uyumluluk için kart boyutu ayarı */
+@media (max-width: 350px) {
+    :root {
+        --card-size: 280px;
+    }
+}
+
+.card {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+
+.card.is-flipped {
+    transform: rotateY(180deg);
+}
+
+/* Kartın Ön ve Arka Yüzü Ortak Özellikler */
+.card__face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    border: 2px solid var(--gold-accent);
+}
+
+/* Ön Yüz */
+.card__face--front {
+    background: linear-gradient(135deg, #1e1e1e, #2a2a2a);
+    color: var(--gold-accent);
+}
+
+.icon-cocktail {
+    font-size: 4rem;
+    margin-bottom: 20px;
+}
+
+.cta-text {
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 1.4;
+}
+
+.cta-sub {
+    margin-top: 10px;
+    font-size: 0.9rem;
+    opacity: 0.7;
+    font-weight: 400;
+}
+
+/* Arka Yüz */
+.card__face--back {
+    transform: rotateY(180deg);
+    background-color: #fff; 
+    color: #000; 
+    box-shadow: inset 0 0 50px rgba(0,0,0,0.2);
+}
+
+.cocktail-name {
+    font-family: 'Oswald', sans-serif;
+    font-size: 2rem;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    line-height: 1.1;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+}
+
+.cocktail-ingredients {
+    font-size: 0.95rem;
+    margin-bottom: 20px;
+    font-weight: 500;
+    line-height: 1.4;
+}
+
+.cocktail-price {
+    font-size: 1.5rem;
+    font-weight: bold;
+    background: rgba(0,0,0,0.1);
+    padding: 8px 20px;
+    border-radius: 50px;
+}
+
+/* Animasyonlar */
+.tap-hint {
+    margin-top: 20px;
+    font-size: 0.75rem;
+    opacity: 0.5;
+    animation: blink 2s infinite;
+}
+
+@keyframes blink {
+    0%, 100% { opacity: 0.3; }
+    50% { opacity: 0.8; }
+}
+
+/* Bootstrap Buton Özelleştirme (Altın Sarısı) */
+.btn-custom-gold {
+    border: 1px solid var(--gold-accent);
+    color: var(--gold-accent);
+    padding: 10px 30px;
+    border-radius: 50px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+.btn-custom-gold:hover {
+    background-color: var(--gold-accent);
+    color: var(--bg-color);
+    box-shadow: 0 0 15px rgba(212, 175, 55, 0.5);
+}
