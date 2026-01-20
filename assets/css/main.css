@@ -1657,3 +1657,23 @@ section,
   100% { transform: scale(1); opacity: 1; }
 }
 
+.btn-get-started {
+  display: inline-block;
+  padding: 15px 35px;
+  background: linear-gradient(45deg, #ff512f, #dd2476); /* Turuncu-Pembe geçiş */
+  color: white;
+  text-decoration: none;
+  font-family: sans-serif;
+  font-weight: bold;
+  text-transform: uppercase; /* Yazıyı büyük harf yapar */
+  border-radius: 8px;
+  transition: background 0.5s;
+  background-size: 200% auto;
+}
+
+.btn-get-started:hover {
+  background-position: right center; /* Rengi hareket ettirir */
+  color: #fff;
+  text-decoration: none;
+}
+
